@@ -1,0 +1,19 @@
+{
+  "entity": {
+    "type": "blockcraft:red",
+    "health": 45,
+    "damage": 4,
+    "size": {
+      "width": 1.0,
+      "height": 1.0
+    },
+    "texture": "blockcraft:textures/entity/red.png",
+    "model": "blockcraft/models/red_square.json",
+    "ai": {
+      "can_move": true,
+      "can_attack": true,
+      "movement_speed": 0.5,
+      "attack_range": 5
+    }
+  }
+}

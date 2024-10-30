@@ -1,0 +1,33 @@
+{
+  "biome": {
+    "name": "blockcraft:megante_biome",
+    "temperature": 0.5,
+    "precipitation": "rain",
+    "surface_builder": {
+      "type": "minecraft:grass",
+      "config": {
+        "top": "minecraft:grass",
+        "fill": "minecraft:stone",
+        "height": 2
+      }
+    },
+    "features": [
+      "minecraft:caves",
+      "blockcraft:megante_spawns"
+    ],
+    "grass_color": {
+      "type": "minecraft:color",
+      "value": 16753920  // オレンジ色のRGB値
+    },
+    "spawns": {
+      "mob": [
+        {
+          "type": "blockcraft:megante",
+          "weight": 5,
+          "min_count": 1,
+          "max_count": 3
+        }
+      ]
+    }
+  }
+}

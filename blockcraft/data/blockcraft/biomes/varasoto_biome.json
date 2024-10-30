@@ -14,6 +14,16 @@
     "features": [
       "blockcraft:varanium_ore",
       "minecraft:trees"
-    ]
+    ],
+    "spawns": {
+      "mob": [
+        {
+          "type": "blockcraft:red",
+          "weight": 10,
+          "min_count": 1,
+          "max_count": 5
+        }
+      ]
+    }
   }
 }

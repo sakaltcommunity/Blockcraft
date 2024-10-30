@@ -1,0 +1,10 @@
+{
+  "dimension": {
+    "type": "minecraft:overworld",
+    "generator": {
+      "type": "minecraft:noise",
+      "settings": "blockcraft:megante_land",
+      "biome": "blockcraft:megante_biome"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+group = 'com.example.blockcraft'
+version = '1.0'
+archivesBaseName = 'blockcraft'
+
+minecraft {
+    version = "1.20.10"
+    mappings channel: 'official', version: '1.20.10'
+    // 他の設定
+}

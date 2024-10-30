@@ -1,27 +1,22 @@
-package dimension;
+package blockcraft.dimension;
 
-import blocks.VaraniumOreBlock;
-import entities.RedEntity;
+import blockcraft.blocks.varaniumoreblock;
+import blockcraft.entities.redentity;
+import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.ai.attributes.AttributeModifierMap;
-import net.minecraft.entity.ai.attributes.Attributes;
-import net.minecraft.entity.ai.goal.*;
-import net.minecraft.entity.monster.ZombieEntity;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.registry.Registry;
-import net.minecraft.util.registry.WorldGenRegistries;
-import net.minecraft.util.registry.BiomeRegistry;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.BiomeAmbience;
 import net.minecraft.world.biome.BiomeGenerationSettings;
 import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
+import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 
-public class VarasotoDimension {
-    public static final Biome VARASOTO_BIOME = createVarasotoBiome();
-    public static EntityType<RedEntity> RED;
+public class varasotodimension {
+    public static final Biome varasoto_biome = createVarasotoBiome();
+    public static EntityType<redentity> red;
 
     private static Biome createVarasotoBiome() {
         BiomeAmbience effects = new BiomeAmbience.Builder()
@@ -31,17 +26,11 @@ public class VarasotoDimension {
             .setSkyColor(0xFF0000)
             .build();
 
-        BiomeGenerationSettings.Builder generationSettings = new BiomeGenerationSettings.Builder()
-            .withSurfaceBuilder(ConfiguredSurfaceBuilders.NOPE);
-
-        generationSettings.withFeature(GenerationStage.Decoration.SURFACE_STRUCTURES, DefaultBiomeFeatures.DESERT_WELL);
-        addVaraniumOre(generationSettings); // ヴァラニウム鉱石を追加
+        BiomeGenerationSettings.Builder generationSettings = new BiomeGenerationSettings.Builder();
+        addVaraniumOre(generationSettings);
 
         MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder();
-        mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(RED, 100, 2, 4));
-
-        DefaultBiomeFeatures.withCavesAndCanyons(generationSettings);
-        DefaultBiomeFeatures.withOverworldOres(generationSettings);
+        mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(red, 100, 2, 4));
 
         return new Biome.Builder()
             .precipitation(Biome.RainType.NONE)
@@ -57,11 +46,16 @@ public class VarasotoDimension {
     }
 
     public static void register() {
-        RED = Registry.register(Registry.ENTITY_TYPE, new ResourceLocation("blockcraft:red"), EntityType.Builder.of(RedEntity::new, EntityClassification.MONSTER).sized(0.6F, 1.95F).build("red"));
-        BiomeRegistry.registerBiome(new ResourceLocation("blockcraft:varasoto_biome"), VARASOTO_BIOME);
+        red = EntityType.Builder.of(redentity::new, EntityClassification.MONSTER)
+                .sized(0.6F, 1.95F)
+                .build("blockcraft:red")
+                .setRegistryName(new ResourceLocation("blockcraft", "red"));
+
+        net.minecraftforge.registries.ForgeRegistries.BIOMES.register(new ResourceLocation("blockcraft", "varasoto_biome"), varasoto_biome);
     }
 
-    private static void addVaraniumOre(BiomeGenerationSettings.Builder builder) {
-        builder.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.configured(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, VaraniumOreBlock.VARANIUM_ORE.defaultBlockState(), 8)).range(20).square().func_227226_c_());
+    private static void addVaraniumOre(BiomeGenerationSettings.Builder generationSettings) {
+        generationSettings.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, 
+            Feature.ORE.configured(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, varaniumoreblock.varanium_ore.defaultBlockState(), 8)).decorated(net.minecraft.world.gen.feature.Placement.RANGE.configured(new net.minecraft.world.gen.feature.TopRangeConfig(0, 0, 16))).squared().count(20));
     }
 }

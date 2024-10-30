@@ -6,7 +6,7 @@
     "defense": 15,
     "size": {
       "width": 1.0,
-      "height": 1.5
+      "height": 1.0
     },
     "texture": "blockcraft:textures/entity/paladin_red.png",
     "model": "blockcraft/models/paladin_red.json",

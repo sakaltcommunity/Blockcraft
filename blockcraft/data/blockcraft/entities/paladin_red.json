@@ -1,0 +1,25 @@
+{
+  "entity": {
+    "type": "blockcraft:paladin_red",
+    "health": 40,
+    "damage": 5,   
+    "defense": 15,
+    "size": {
+      "width": 1.0,
+      "height": 1.5
+    },
+    "texture": "blockcraft:textures/entity/paladin_red.png",
+    "model": "blockcraft/models/paladin_red.json",
+    "ai": {
+      "can_move": true,
+      "can_attack": true,
+      "movement_speed": 0.3,
+      "attack_range": 3,
+      "attack_sound": "minecraft:anvil",
+      "experience": {
+        "min": 6,
+        "max": 7
+      }
+    }
+  }
+}

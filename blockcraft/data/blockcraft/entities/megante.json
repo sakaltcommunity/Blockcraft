@@ -4,8 +4,8 @@
     "health": 30,
     "damage": 4,
     "size": {
-      "width": 0.6,
-      "height": 1.8
+      "width": 1.0,
+      "height": 1.0
     },
     "texture": "blockcraft:textures/entity/megante.png",
     "ai": {

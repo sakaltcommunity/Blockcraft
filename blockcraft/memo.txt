@@ -1,0 +1,25 @@
+# Minecraft Mod "blockcraft" パスメモ
+
+## アイテム定義
+- パス: blockcraft/data/blockcraft/varasotoitems.json
+
+## エンティティ定義
+- パス: blockcraft/data/blockcraft/entities/red.json
+
+## モデル定義 (赤い四角)
+- パス: blockcraft/models/red_square.json
+
+## ディメンション定義
+- パス: blockcraft/data/blockcraft/dimensions/varasoto.json
+
+## バイオーム定義
+- パス: blockcraft/data/blockcraft/biomes/varasoto_biome.json
+
+## レシピ定義
+- パス: blockcraft/data/blockcraft/recipes/varanium_greatsword.json
+
+## テクスチャファイル
+- ヴァラニウム鉱石のテクスチャ: blockcraft/textures/item/varanium.png
+- ヴァラニウムグレートソードのテクスチャ: blockcraft/textures/item/varanium_greatsword.png
+- レッドエンティティのテクスチャ: blockcraft/textures/entity/red.png
+- 赤い四角のエンティティのテクスチャ: blockcraft/textures/entity/red.png

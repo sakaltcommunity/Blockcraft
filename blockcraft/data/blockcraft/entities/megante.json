@@ -1,0 +1,26 @@
+{
+  "entity": {
+    "type": "blockcraft:megante",
+    "health": 30,
+    "damage": 4,
+    "size": {
+      "width": 0.6,
+      "height": 1.8
+    },
+    "texture": "blockcraft:textures/entity/megante.png",
+    "ai": {
+      "can_move": true,
+      "can_attack": true,
+      "movement_speed": 0.25,
+      "attack_range": 10,
+      "particle_effect": {
+        "type": "unique_particle",
+        "damage": 2
+      },
+      "experience": {
+        "min": 3,
+        "max": 5
+      }
+    }
+  }
+}

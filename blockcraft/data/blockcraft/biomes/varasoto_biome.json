@@ -1,0 +1,19 @@
+{
+  "biome": {
+    "name": "blockcraft:varasoto_biome",
+    "temperature": 0.5,
+    "precipitation": "none",
+    "surface_builder": {
+      "type": "minecraft:stone",
+      "config": {
+        "top": "minecraft:red_concrete",
+        "fill": "minecraft:stone",
+        "height": 2
+      }
+    },
+    "features": [
+      "blockcraft:varanium_ore",
+      "minecraft:trees"
+    ]
+  }
+}

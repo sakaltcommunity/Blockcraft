@@ -1,0 +1,11 @@
+{
+  "dimension": {
+    "type": "blockcraft:varasoto",
+    "dimension_type": {
+      "natural": true,
+      "infinite": false,
+      "effects": "blockcraft:varasoto_biome",
+      "coordinate_scale": 1.0
+    }
+  }
+}

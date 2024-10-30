@@ -17,7 +17,7 @@
     ],
     "grass_color": {
       "type": "minecraft:color",
-      "value": 16753920  // オレンジ色のRGB値
+      "value": 16753920
     },
     "spawns": {
       "mob": [

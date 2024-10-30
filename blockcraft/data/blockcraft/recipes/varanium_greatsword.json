@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " R ",
+    " R ",
+    " S "
+  ],
+  "key": {
+    "R": {
+      "item": "blockcraft:varanium"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "blockcraft:varanium_greatsword",
+    "count": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "blockcraft:megante_spawn_egg",
+  "properties": {
+    "max_stack_size": 64,
+    "category": "misc"
+  },
+  "texture": "blockcraft:textures/item/megante_spawn_egg.png",
+  "model": {
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "blockcraft:textures/item/megante_spawn_egg.png"
+    }
+  },
+  "spawn_egg": {
+    "entity": "blockcraft:megante",
+    "color": {
+      "primary": 16753920,  // オレンジ色の例
+      "secondary": 16711680  // 赤色の例
+    }
+  }
+}

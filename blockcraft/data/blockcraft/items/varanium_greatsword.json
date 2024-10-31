@@ -6,7 +6,7 @@
     "enchantability": 10,
     "max_stack_size": 1,
     "category": "combat",
-    "cooldown": 25  // クールダウンを25ティックに設定
+    "attack_speed": -2.0
   },
   "texture": "blockcraft:textures/item/varanium_greatsword.png",
   "model": {

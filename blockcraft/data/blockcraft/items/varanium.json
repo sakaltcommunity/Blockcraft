@@ -1,0 +1,14 @@
+{
+  "name": "blockcraft:varanium",
+  "properties": {
+    "max_stack_size": 64,
+    "category": "misc"
+  },
+  "texture": "blockcraft:textures/item/varanium.png",
+  "model": {
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "blockcraft:textures/item/varanium.png"
+    }
+  }
+}

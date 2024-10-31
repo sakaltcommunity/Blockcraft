@@ -1,0 +1,21 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "blockcraft:textures/entity/merkiye.png",
+    "layer1": "blockcraft:textures/entity/megante.png"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [1, 1, 1],
+      "faces": {
+        "north": { "uv": [0, 0, 1, 1], "texture": "#layer1" },
+        "south": { "uv": [0, 0, 1, 1], "texture": "#layer0" },
+        "east": { "uv": [0, 0, 1, 1], "texture": "#layer0" },
+        "west": { "uv": [0, 0, 1, 1], "texture": "#layer0" },
+        "up": { "uv": [0, 0, 1, 1], "texture": "#layer0" },
+        "down": { "uv": [0, 0, 1, 1], "texture": "#layer0" }
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "blockcraft:megante_greatsword",
+  "properties": {
+    "damage": 19.5,
+    "durability": 1778,
+    "enchantability": 8,
+    "max_stack_size": 1,
+    "category": "combat",
+    "attack_speed": -2.0
+  },
+  "texture": "blockcraft:textures/item/megante_greatsword.png",
+  "model": {
+    "parent": "minecraft:item/handheld",
+    "textures": {
+      "layer0": "blockcraft:textures/item/megante_greatsword.png"
+    }
+  }
+}

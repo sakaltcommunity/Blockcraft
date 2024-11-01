@@ -3,11 +3,14 @@
   "pattern": [
     " R ",
     " R ",
-    " S "
+    "DSD"
   ],
   "key": {
     "R": {
       "item": "blockcraft:varanium"
+    },
+    "D": {
+      "item": "minecraft:diamond"
     },
     "S": {
       "item": "minecraft:stick"

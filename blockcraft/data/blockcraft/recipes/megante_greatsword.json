@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " M ",
+    " M ",
+    "DSD"
+  ],
+  "key": {
+    "M": {
+      "item": "blockcraft:megantium"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "S": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "result": {
+    "item": "blockcraft:megante_greatsword",
+    "count": 1
+  }
+}

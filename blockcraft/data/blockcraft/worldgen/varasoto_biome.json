@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:dimension",
+  "biome": "blockcraft:varasoto_biome",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "blockcraft:varasoto"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:block",
+  "name": "blockcraft:blue_stem",
+  "material": "wood",
+  "hardness": 2.0,
+  "resistance": 3.0,
+  "sound": "minecraft:block.wood.place",
+  "texture": "blockcraft:block/blue_stem"
+}
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "blockcraft:block/blue_stem_top",
+    "side": "blockcraft:block/blue_stem_side"
+  }
+}

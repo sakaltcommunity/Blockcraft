@@ -1,10 +1,10 @@
 {
   "structures": [
     {
-      "type": "blockcraft:random_loot_structure",
+      "type": "blockcraft:structure",
       "name": "blockcraft:megante_structure",
       "biomes": ["blockcraft:megante_biome"],
-      "spawn_chance": 0.02,
+      "generation_chance": 0.0167,
       "structure": {
         "layers": [
           {
@@ -24,22 +24,18 @@
                   "type": "minecraft:diamond",
                   "weight": 2,
                   "min_count": 24,
-                  "max_count": 35
+                  "max_count": 34
                 },
                 {
                   "type": "minecraft:iron_ingot",
                   "weight": 3,
-                  "min_count": 24,
-                  "max_count": 64
+                  "min_count": 35,
+                  "max_count": 45
                 }
               ]
             }
           }
         ]
-      },
-      "spawn_conditions": {
-        "cooldown": 1000,
-        "radius": 5
       }
     }
   ]

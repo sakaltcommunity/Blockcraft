@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:dimension",
+  "biome": "blockcraft:megante_biome",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "blockcraft:megante_land"
+  }
+}

@@ -9,6 +9,10 @@
     },
     "texture": "blockcraft:textures/entity/merkiye.png",
     "model": "blockcraft/models/merkiye.json",
+    "experience": {
+        "min": 5,
+        "max": 6
+      },
     "ai": {
       "can_move": true,
       "can_attack": true,

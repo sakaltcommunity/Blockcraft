@@ -1,0 +1,46 @@
+{
+  "structures": [
+    {
+      "type": "blockcraft:random_loot_structure",
+      "name": "blockcraft:megante_structure",
+      "biomes": ["blockcraft:megante_biome"],
+      "spawn_chance": 0.02,
+      "structure": {
+        "layers": [
+          {
+            "material": "minecraft:stone_bricks",
+            "height": 2
+          },
+          {
+            "material": "minecraft:chest",
+            "height": 1,
+            "content": {
+              "items": [
+                {
+                  "type": "blockcraft:megante_greatblade",
+                  "weight": 1
+                },
+                {
+                  "type": "minecraft:diamond",
+                  "weight": 2,
+                  "min_count": 24,
+                  "max_count": 35
+                },
+                {
+                  "type": "minecraft:iron_ingot",
+                  "weight": 3,
+                  "min_count": 24,
+                  "max_count": 64
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "spawn_conditions": {
+        "cooldown": 1000,
+        "radius": 5
+      }
+    }
+  ]
+}

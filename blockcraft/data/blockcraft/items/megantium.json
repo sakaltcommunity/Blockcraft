@@ -1,0 +1,14 @@
+{
+  "name": "blockcraft:megantium",
+  "properties": {
+    "max_stack_size": 64,
+    "category": "misc"
+  },
+  "texture": "blockcraft:textures/item/megantium.png",
+  "model": {
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "blockcraft:textures/item/megantium.png"
+    }
+  }
+}

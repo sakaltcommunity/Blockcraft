@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:biome",
+  "base_temperature": 0.5,
+  "precipitation": "rain",
+  "depth": 0.1,
+  "scale": 0.2,
+  "downfall": 0.5,
+  "effects": {
+    "sky_color": 4482881,
+    "fog_color": 8411497,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "grass_color": 3944240,
+    "foliage_color": 3944240
+  },
+  "features": [
+    {
+      "feature": "minecraft:tree",
+      "weight": 10,
+      "state": {
+        "Name": "blockcraft:blue_stem"
+      },
+      "height": 6,
+      "foliage": {
+        "type": "minecraft:warped_fungus"
+      }
+    }
+  ]
+}

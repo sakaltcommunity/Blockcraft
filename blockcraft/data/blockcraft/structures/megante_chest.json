@@ -2,7 +2,7 @@
   "structures": [
     {
       "type": "blockcraft:structure",
-      "name": "blockcraft:megante_structure",
+      "name": "blockcraft:megante_chest",
       "biomes": ["blockcraft:megante_biome"],
       "generation_chance": 0.0167,
       "structure": {
@@ -25,6 +25,12 @@
                   "weight": 2,
                   "min_count": 24,
                   "max_count": 34
+                },
+                {
+                  "type": "blockcraft:megantium",
+                  "weight": 1,
+                  "min_count": 1,
+                  "max_count": 2
                 },
                 {
                   "type": "minecraft:iron_ingot",

@@ -26,6 +26,18 @@
           "weight": 5,
           "min_count": 1,
           "max_count": 3
+        },
+        {
+          "type": "blockcraft:megante_blast",
+          "weight": 4,
+          "min_count": 2,
+          "max_count": 3
+        },
+        {
+          "type": "blockcraft:merkiye",
+          "weight": 3,
+          "min_count": 1,
+          "max_count": 2
         }
       ]
     }

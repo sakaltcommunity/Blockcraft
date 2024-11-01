@@ -9,6 +9,10 @@
     },
     "texture": "blockcraft:textures/entity/red.png",
     "model": "blockcraft/models/red_square.json",
+    "experience": {
+        "min": 1,
+        "max": 6
+      },
     "ai": {
       "can_move": true,
       "can_attack": true,
